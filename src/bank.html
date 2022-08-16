@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1 class="text-5xl text-center mt-16">Let's get some <span
+                class="font-semibold text-purple-600">Moooooney!</span>
+        </h1>
+    </header>
+    <main class="w-3/4 mx-auto">
+        <section class="mt-8">
+            <div class="grid grid-cols-3 gap-4">
+                <div class="bg-green-300 p-8 rounded text-white">
+                    <h1 class="text-2xl">Deposite</h1>
+                    <h3 class="text-5xl font-medium">$00</h3>
+                </div>
+                <div class="bg-fuchsia-300 p-8 rounded text-white">
+                    <h1 class="text-2xl ">Withdraw</h1>
+                    <h3 class="text-5xl font-medium">$00</h3>
+                </div>
+                <div class="bg-amber-300 p-8 rounded text-white">
+                    <h1 class="text-2xl ">Blance</h1>
+                    <h3 class="text-5xl font-medium">$1230</h3>
+                </div>
+            </div>
+        </section>
+        <!-- Deposite -->
+        <section class="mt-8">
+            <div class="grid grid-cols-2 gap-4">
+                <div class="bg-red-100 p-8 rounded">
+                    <h1 class="text-2xl">Please Deposite</h1>
+                    <div>
+                        <input id="deposite-amount" class="w-3/4 border block rounded mb-4 px-2 " type="text"
+                            placeholder="$ Deposite Your Amount">
+                        <button id="deposite"
+                            class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-4 py-2 text-white font-medium rounded">Submit</button>
+                    </div>
+                </div>
+                <div class="bg-purple-100 p-8 rounded">
+                    <h1 class="text-2xl">Please Withdraw</h1>
+                    <div>
+                        <input id="withdraw-amount" class="w-3/4 border block rounded mb-4 px-2 " type="text"
+                            placeholder="$ Withdraw Your Amount">
+                        <button id="withdraw"
+                            class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 px-4 py-2 text-white font-medium rounded">Submit</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
