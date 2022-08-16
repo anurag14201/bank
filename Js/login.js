@@ -11,4 +11,5 @@ document.getElementById('login-submit').addEventListener('click', function () {
     if (userEmail == 'baperbank@gmail.com' && userPass == 'bank1234') {
         window.location.href = 'bank.html';
     }
-})
+});
+
