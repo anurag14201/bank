@@ -16,4 +16,23 @@ document.getElementById('deposite').addEventListener('click', function () {
     blanceTotal.innerText = newBlanceTotal;
 
     depositeInput.value = '';
+});
+
+document.getElementById('withdraw').addEventListener('click', function () {
+    const withdrawInput = document.getElementById('withdraw-amount');
+    const withdrawAmount = withdrawInput.value;
+    // console.log(withdrawAmount);
+
+    const withdrawTotal = document.getElementById('withdraw-total');
+    const perWithdrawTotal = withdrawTotal.innerText;
+    const newWithdraw = parseFloat(perWithdrawTotal) + parseFloat(withdrawAmount);
+    withdrawTotal.innerText = newWithdraw;
+
+    const blanceTotalWith = document.getElementById('blance-total');
+    const blanceTotalTextWith = blanceTotalWith.innerText;
+    const perBlanceTotalWith = parseFloat(blanceTotalTextWith);
+    const newBlanceTotalWith = perBlanceTotalWith - parseFloat(withdrawAmount);
+    blanceTotalWith.innerText = newBlanceTotalWith;
+
+    withdrawInput.value = '';
 })
